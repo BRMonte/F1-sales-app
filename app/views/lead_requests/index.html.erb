@@ -1,0 +1,23 @@
+<div class="lead-infos">
+    <h1>Leads Perdidas</h1>
+    <table class="customTable">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Codigo</th>
+          <th>Sucesso?</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @lost_leads.each do |l| %>
+        <tr>
+          <td><%= l.lead_id %></td>
+          <td><%= l.lead_name %></td>
+          <td><%= l.status_code %></td>
+          <td><%= l.success %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
