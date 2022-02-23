@@ -1,0 +1,3 @@
+class LeadRequest < ApplicationRecord
+
+end
